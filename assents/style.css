@@ -6,14 +6,13 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif; 
-    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    color: #e0e0e0;
     font-size: 1.8rem;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #121212;
-    color: #e0e0e0;
 }
 
 * {
@@ -22,60 +21,49 @@ body {
     box-sizing: border-box;
 }
 
-
 .carousel-inner > .carousel-item > img {
     width: 700px;
     height: 600px; 
-  }
+}
 
-.introducion{
-
+.introducion {
     text-align: center;
     margin: 15px;
 }
 
-.introducion > h1{
-
+.introducion > h1 {
     color: rgb(76, 0, 255);
     margin: 30px;
-
-
 }
-.container {
+
+.container, .container2 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 200vw; 
+    width: 100%;
+    max-width: 1200px;
     padding: 20px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     background-color: #121212;
     color: white;
-    margin-top: 80px;
+    margin: 80px auto 0;
 }
 
+.img-aside img, .img-aside2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
 .content > h2 {
-
-    text-align: center;
-    margin-bottom: 30px;
     color: rgb(76, 0, 255);
-}
-.content {
-    flex: 1; 
-    margin-right: 50px; 
-}
-
-
-.img-aside {
-    flex: 0 0 300px; 
     text-align: center;
+    font-size: xx-large;
+    margin-bottom: 20px;
 }
 
-.img-aside img {
-    max-width: 25vw;
-    height: 20vw;
-    border-radius: 8px;
-    
+.content > p {
+    margin-left: 25px;
 }
 
 .navbar {
@@ -122,31 +110,44 @@ body {
     cursor: not-allowed;
 }
 
-  
-.copyright{
-    font-size: 1.4rem;
-    color: rgb(76, 0, 255);;
-  }
+.testimonials {
+    padding: 5rem;
+}
 
-  .icon{
+.testimonials-name {
+    color: rgb(76, 0, 255);
+}
+
+.testimonial-text {
+    color: rgb(76, 0, 255);
+}
+
+.testimonials-card {
+    width: 50%;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    color: rgb(76, 0, 255);
+}
+
+.icon {
     width: 1.8rem;
     height: 1.8rem;
     padding: 1.2rem;
-    background-color: rgb(76, 0, 255);;
+    background-color: rgb(76, 0, 255);
     border-radius: 50%;
     color: #fff;
-    margin-bottom: 1.6rem;   
+    margin-bottom: 1.6rem;
 }
 
-/* Estilo do Rodapé */
 .footer-container {
     text-align: center;
-    background-color: #121212; 
+    background-color: #121212;
     padding: 20px;
 }
 
 .footer-container > h3 {
-
     font-size: x-large;
     color: rgb(76, 0, 255);
     margin: 25px;
@@ -154,7 +155,7 @@ body {
 
 .social-icons {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .social-icons a {
@@ -170,23 +171,50 @@ footer p.copyright {
     color: #6c757d;
 }
 
-
-
-
+/* Alterações para dispositivos móveis */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+    .carousel-inner > .carousel-item > img {
+        width: 100%; /* Ajusta a imagem do carousel para ocupar 100% da largura */
+        height: auto; /* Ajusta a altura automaticamente */
     }
 
-    .navbar .nav-links {
+    .container, .container2 {
         flex-direction: column;
-        width: 100%;
+        padding: 10px;
+        margin-top: 20px; /* Diminui a margem superior para dispositivos móveis */
     }
 
-    .navbar .nav-links a {
-        width: 100%;
-        text-align: left;
-        padding-left: 0;
+    .container .content, .container2 .content2 {
+        margin-right: 0;
+        margin-bottom: 20px; /* Adiciona margem inferior para separar seções */
+    }
+
+    .img-aside, .img-aside2 {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .testimonials {
+        padding: 2rem; /* Diminui o padding das testemunhas para dispositivos móveis */
+    }
+
+    .testimonials-card {
+        width: 100%; /* Faz com que o cartão de testemunhos ocupe toda a largura disponível */
+    }
+
+    .container2 {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .img-aside2 {
+        order: 2; /* Move o aside para o final */
+        text-align: center;
+        margin-bottom: 20px; /* Espaço entre o aside e a section */
+    }
+
+    .content2 {
+        order: 1; /* Move a section para o início */
+        margin-right: 0;
     }
 }
