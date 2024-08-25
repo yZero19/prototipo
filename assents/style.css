@@ -12,7 +12,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #121212;
+    background-color: #000000;
 }
 
 * {
@@ -22,8 +22,10 @@ body {
 }
 
 .carousel-inner > .carousel-item > img {
-    width: 700px;
-    height: 600px; 
+    width: 400px;
+    height: 400px; 
+    background-size: cover;
+    
 }
 
 .introducion {
@@ -32,8 +34,13 @@ body {
 }
 
 .introducion > h1 {
-    color: rgb(76, 0, 255);
+    color: rgb(0, 255, 21);
     margin: 30px;
+}
+
+.introducion > p {
+
+    color: rgb(255, 255, 255);
 }
 
 .container, .container2 {
@@ -44,19 +51,22 @@ body {
     max-width: 1200px;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #121212;
-    color: white;
+    background-color: #000000;
+    color: rgb(0, 255, 21);
     margin: 80px auto 0;
 }
 
-.img-aside img, .img-aside2 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
 
+
+.img-aside img, .img-aside2 img{
+
+    height: 380px;
+    width: 350px;
+    border-radius: 10px ;
+    margin: 10px;
+}
 .content > h2 {
-    color: rgb(76, 0, 255);
+    color: rgb(0, 255, 21);
     text-align: center;
     font-size: xx-large;
     margin-bottom: 20px;
@@ -64,10 +74,13 @@ body {
 
 .content > p {
     margin-left: 25px;
+    color: #ffffff;
 }
 
+
+
 .navbar {
-    background-color: #121212;
+    background-color: #000000;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -78,11 +91,12 @@ body {
 .navbar .logo {
     display: flex;
     align-items: center;
+    
 }
 
 .navbar .logo img {
-    width: 50px;
-    height: 40px;
+    width: 150px;
+    height: 70px;
 }
 
 .navbar .nav-links {
@@ -93,16 +107,16 @@ body {
 }
 
 .navbar .nav-links a {
-    color: rgb(76, 0, 255);
+    color: rgb(0, 255, 21);
     text-decoration: none;
     padding: 10px 20px;
     display: block;
 }
 
 .navbar .nav-links a:hover {
-    background-color: rgb(76, 0, 255);
+    background-color: rgb(0, 255, 21);
     border-radius: 4px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .navbar .nav-links a.disabled {
@@ -115,11 +129,11 @@ body {
 }
 
 .testimonials-name {
-    color: rgb(76, 0, 255);
+    color: rgb(0, 255, 21);
 }
 
 .testimonial-text {
-    color: rgb(76, 0, 255);
+    color: rgb(0, 255, 21);
 }
 
 .testimonials-card {
@@ -128,14 +142,14 @@ body {
 
 .copyright {
     font-size: 1.4rem;
-    color: rgb(76, 0, 255);
+    color: rgb(0, 255, 21);
 }
 
 .icon {
     width: 1.8rem;
     height: 1.8rem;
     padding: 1.2rem;
-    background-color: rgb(76, 0, 255);
+    background-color: rgb(0, 255, 21);
     border-radius: 50%;
     color: #fff;
     margin-bottom: 1.6rem;
@@ -143,13 +157,13 @@ body {
 
 .footer-container {
     text-align: center;
-    background-color: #121212;
+    background-color: #000000;
     padding: 20px;
 }
 
 .footer-container > h3 {
     font-size: x-large;
-    color: rgb(76, 0, 255);
+    color: rgb(0, 255, 21);
     margin: 25px;
 }
 
@@ -161,14 +175,14 @@ body {
 .social-icons a {
     display: inline-block;
     margin: 0 10px;
-    color: #343a40;
+    color: #ffffff;
     text-decoration: none;
 }
 
 footer p.copyright {
     margin-top: 20px;
     font-size: 14px;
-    color: #6c757d;
+    color: #ffffff;
 }
 
 /* Alterações para dispositivos móveis */
@@ -217,4 +231,63 @@ footer p.copyright {
         order: 1; /* Move a section para o início */
         margin-right: 0;
     }
+}
+
+.containerCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 28rem;
+    margin: 30px;
+    height: 540px;
+}
+
+.card-img-top{
+
+    height: 350px;
+}
+.product-box {
+    background-color: #292828;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+}
+
+.product-info {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.product-description {
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 24px;
+    color: #2bff00;
+    margin-bottom: 20px;
+}
+
+.buy-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #2bff00;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.buy-button:last-child {
+    margin-right: 0;
+}
+
+.buy-button:hover {
+    background-color: #ffffffb4;
+    color: #292828;
 }
