@@ -243,10 +243,15 @@ footer p.copyright {
     width: 28rem;
     margin: 30px;
     height: 540px;
+    background-color: #000000;
+    color: white;
+    margin: 15PX;
+    border-color: #2bff00;
+    border-radius: 16PX;
 }
 
 .card-img-top{
-
+    border-radius: 15px 15px 0 0;
     height: 350px;
 }
 .product-box {
