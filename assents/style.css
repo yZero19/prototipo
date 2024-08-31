@@ -535,4 +535,6 @@ tr:nth-child(even) {
 .tituloCarrinho{
 
   align-items: center;
+  text-align: center;
+  color: #2bff00;
 }
