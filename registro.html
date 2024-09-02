@@ -48,28 +48,43 @@
     <section class="login">
       <div class="loginContainer">
         <div class="loginBox">
-          <h1>Faça seu login</h1><br>
+          <h1>Realize seu cadastro</h1>
+          <br />
           <form action="">
             <div class="inputBox">
-              <label for="email">Email</label><br>
-              <input type="email" id="email" name="email" required/>
+              <label for="email">Email</label><br />
+              <input type="email" id="email" name="email" />
             </div>
             <div class="inputBox">
-              <label for="password">Senha</label><br>
-              <input id="password" type="password" required />
+              <label for="password">Senha</label><br />
+              <input
+                id="password"
+                name="password"
+                type="password"
+                minlength="6"
+                required
+              />
             </div>
             <div class="inputBox">
-              <input type="submit" value="Entrar" />
+              <label for="confirmPassword">Confirme sua Senha</label><br />
+              <input
+                id="confirmPassword"
+                name="confirmPassword"
+                type="password"
+                minlength="6"
+                required
+              />
+            </div>
+            <div class="inputBox">
+              <input type="submit" value="Cadastrar" />
             </div>
             <div class="linhaReta"></div>
-            <div class="inputCadastrar">
-              <a href="registro.html" class="cadastrar">Cadastre-se</a>
-              <a href="#" class="cadastrar">Esqueceu a senha?</a>
-            </div>
+            <div class="inputCadastrar"></div>
           </form>
         </div>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
   <script
     type="module"
