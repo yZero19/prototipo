@@ -31,4 +31,3 @@ async function consultarCep() {
   
 
   document.getElementById('cep').addEventListener('blur', consultarCep);
-  
