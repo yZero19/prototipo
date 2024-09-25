@@ -502,6 +502,17 @@ input[id = "login"]:hover {
   color: #fff;
 }
 
+.logForgot{
+  text-decoration: none;
+  color: rgb(93, 184, 37);
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.logForgot:hover{
+  color: rgb(0, 255, 21);
+}
+
 .loginBox {
   position: relative;
   width: 500px;
@@ -658,4 +669,15 @@ input[id="enviar"]:hover{
 .regBox > h1 {
   color: rgb(150, 150, 150);
   font-weight: 500;
+}
+
+.forgotEmail{
+  color: rgba(255, 255, 255, 0.137);
+  font-weight: 300;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.ouText {
+  font-size: 10px
 }
