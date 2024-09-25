@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -175,7 +173,25 @@
 
  </form>
 
-
+ <footer>
+  <div class="footer-container">
+    <h3>Nossas Redes Sociais</h3>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/DeltaDescartaveis1/" class="text-dark px-3"
+        ><ion-icon name="logo-facebook" class="icon"></ion-icon
+      ></a>
+      <a href="https://www.instagram.com/atacado.delta/" class="text-dark px-3"
+        ><ion-icon name="logo-instagram" class="icon"></ion-icon
+      ></a>
+      <a href="#" class="text-dark px-3"
+        ><ion-icon name="logo-Whatsapp" class="icon"></ion-icon
+      ></a>
+    </div>
+  </div>
+  <p class="text-center copyright">
+    &copy; 2024 All Rights Reserved by Delta
+  </p>
+</footer>
   
 
 
@@ -192,186 +208,3 @@
 </script>
 
 </html>
-=======
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Registro</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,100,0,0"
-    />
-    <link rel="stylesheet" href="assents/style.css" />
-    <link rel="stylesheet" href="assents/script.js" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="shortcut icon"
-      href="/img/favicon-32x32.png"
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="index.html ">
-          <img src="img/logo2.png" alt="Logo" />
-        </a>
-      </div>
-
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="product.html">Produtos</a></li>
-        <li><a href="carrinho.html">Carrinho</a></li>
-        <div class="linha"></div>
-        <div class="menuContainer">
-          <ion-icon name="person-outline" class="iconUser"></ion-icon>
-          <div class="menuLogin">
-            <span class="menuMsg">Bem Vindo</span>
-            <p class="ouText"><a href="login.html" class="menuLink">Entre</a> ou <a href="registro.html" class="menuLink">Cadastre-se</a></p>
-          </div>
-        </div>
-      </ul>
-    </nav>
-
-    <section class="reg">
-      <div class="regContainer">
-        <div class="regBox">
-          <h1>Realize seu cadastro</h1>
-          <br />
-          <form action="">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Nome/Razão Social</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Ex: João da Silva / Empresa LTDA"
-                />
-              </div>
-              <div class="form-group">
-                <label for="cnpj">CNPJ</label>
-                <input
-                  type="text"
-                  id="cnpj"
-                  name="cnpj"
-                  placeholder="Ex: 12.345.678/0001-99"
-                  required
-                />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="telefone">Telefone de Contato</label>
-                <input
-                  type="tel"
-                  id="telefone"
-                  name="telefone"
-                  placeholder="Ex: (11) 91234-5678"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="cep">Cep</label>
-                <input
-                  type="text"
-                  id="cep"
-                  name="cep"
-                  placeholder="Ex: 12345-678"
-                />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="endereco">Endereço Completo</label>
-                <input
-                  type="text"
-                  id="endereco"
-                  name="endereco"
-                  placeholder="Ex: Rua das Flores, 123 - São Paulo, SP"
-                  onblur="consultarCep()"
-                />
-              </div>
-              <div class="form-group">
-                <label for="faturamento">Endereço de Faturamento</label>
-                <input
-                  type="text"
-                  id="faturamento"
-                  name="faturamento"
-                  placeholder="Ex: Av. Paulista, 456 - São Paulo, SP"
-                />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Ex: exemplo@dominio.com"
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="password">Senha</label>
-                <input
-                  id="password"
-                  name="password"
-                  type="password"
-                  minlength="6"
-                  required
-                  placeholder="Digite uma senha"
-                />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="confirmPassword">Confirme sua Senha</label>
-                <input
-                  id="confirmPassword"
-                  name="confirmPassword"
-                  type="password"
-                  minlength="6"
-                  required
-                  placeholder="Confirme sua senha"
-                />
-              </div>
-            </div>
-            <p>
-              Já possui uma conta?
-              <a href="login.html" class="logForgot">Faça seu Login</a>
-            </p>
-            <div class="linhaReta"></div>
-            <br />
-            <input id="enviar" type="submit" value="Cadastrar" />
-
-            <div class="inputCadastrar"></div>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <script src="script.js"></script>
-  </body>
-  <script
-    type="module"
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-  ></script>
-  <script
-    nomodule
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-  ></script>
-</html>
->>>>>>> f61155a9174bcc8a8453a521d2edf5ba7234060a
